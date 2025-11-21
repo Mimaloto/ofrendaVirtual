@@ -57,7 +57,7 @@ public class UsuarioServlet extends HttpServlet {
 
         String nombre = request.getParameter("nombre");
         String correo = request.getParameter("correo");
-        String contrasena = request.getParameter("cntrasena");
+        String contrasena = request.getParameter("contrasena");
 
         UsuarioVO vo = new UsuarioVO("0", nombre, correo, contrasena, null);
         UsuarioDAO dao = new UsuarioDAO(vo);
