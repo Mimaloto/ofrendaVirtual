@@ -7,11 +7,11 @@
     <h2>Ingreso a Ofrenda Virtual</h2>
     <h2>Ingresar</h2>
 
-    <form action="UsuarioControlador" method="post">
-    <input type="hidden" name="accion" value="login">
+    <form action="LoginServlet" method="post">
+        <input type="hidden" name="accion" value="login">
 
-        <label>Usuario:</label><br>
-        <input type="text" name="usuario"><br><br>
+        <label>Correo:</label><br>
+        <input type="text" name="correo"><br><br>
 
         <label>Contraseña:</label><br>
         <input type="password" name="contrasena"><br><br>

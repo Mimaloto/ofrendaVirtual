@@ -29,6 +29,17 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>DonacionesServlet</servlet-name>
+    <servlet-class>controller.DonacionesServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    <servlet-name>DonacionesServlet</servlet-name>
+    <url-pattern>/DonacionesServlet</url-pattern>
+    </servlet-mapping>
+
 
 
 

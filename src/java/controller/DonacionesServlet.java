@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 public class DonacionesServlet extends HttpServlet {
 
     @Override
@@ -24,10 +25,19 @@ public class DonacionesServlet extends HttpServlet {
     }
 
     private void registrarDonacion(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+        throws ServletException, IOException {
 
-        // Aquí va tu lógica del DAO
-        response.getWriter().println("OK Donación registrada");
-    }
+    String monto = request.getParameter("monto");
+    String descripcion = request.getParameter("descripcion");
+
+    // Aquí más adelante pondrás tu lógica con DAO para guardar la donación
+
+    System.out.println("Monto recibido: " + monto);
+    System.out.println("Descripción recibida: " + descripcion);
+
+    // Redirigir de vuelta al JSP con mensaje de éxito
+    response.sendRedirect("realizarDonaciones.jsp?exito=1");
+}
+
 }
 

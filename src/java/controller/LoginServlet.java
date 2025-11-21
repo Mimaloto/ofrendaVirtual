@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
             response.sendRedirect("home.jsp");
         } else {
             request.setAttribute("mensaje", "Usuario no registrado ¿Desea registrarse?");
-            request.getRequestDispatcher("login.jsp").forward(request, response);
+            request.getRequestDispatcher("realizarDonaciones.jsp").forward(request, response);
         }
     }
 }
